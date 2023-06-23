@@ -21,7 +21,7 @@ nav {
   width: 100%;
   z-index: 100;
   backdrop-filter: blur(1px);
-  background-color: #19191909;
+  background-color: #2222220e;
   ul {
     display: flex;
     justify-content: space-between;
@@ -36,7 +36,7 @@ nav {
       right: 180px;
       width: 18px;
       height: 18px;
-      background-color: #191919;
+      background-color: #222;
       border-radius: 50%;
     }
 
@@ -50,11 +50,11 @@ nav {
 #section1 {
   width: 100%;
   height: 100vh;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+  background-color: #fff;
 
   .title {
     position: absolute;
@@ -63,7 +63,7 @@ nav {
 
     p {
       font-size: 13vw;
-      color: #191919;
+      color: #222;
       padding-left: 5vw;
       font-family: "NeueHaasDisplayBlackItalic";
       line-height: 11vw;
@@ -72,7 +72,7 @@ nav {
     .t2 {
       color: transparent;
       margin-left: 30vw;
-      -webkit-text-stroke: 2px #191919;
+      -webkit-text-stroke: 2px #222;
     }
   }
 
@@ -106,7 +106,7 @@ nav {
         left: 0;
         //width: 46vw;
         width: 94vw;
-        border: 1px solid #191919;
+        border: 1px solid #222;
       }
       ul {
         margin-left: 20px;
@@ -144,39 +144,47 @@ nav {
     }
   }
 }
+
 // #section2
 
 #section2 {
   width: 100%;
   height: 120vw;
   background-color: #ebeae4;
+  background-position: right 0px top 125px;
   padding-top: 50px;
+  position: relative;
 
   .about {
     width: 95vw;
-    height: 25vw;
+    height: 300px;
     background-color: #fff;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: 0.8vw solid #000;
+    overflow: hidden;
     p {
-      font-size: 6vw;
+      font-size: 100px;
       font-family: "NeueHaasDisplayBlackItalic";
-      margin: 4vw 0 0 3vw;
-      width: 50vw;
+      margin: 4vw 0 0 5vw;
+      width: 40vw;
     }
     h2 {
-      font-size: 8vw;
-      -webkit-text-stroke: 1px #191919;
+      font-size: 120px;
+      -webkit-text-stroke: 1px #222;
       color: transparent;
-      margin: 3vw;
+      margin: 3vw 1vw 0 0;
+      text-align: right;
+      width: 45vw;
     }
     span {
-      font-size: 2vw;
+      width: 100vw;
+      font-size: 26px;
+      height: 100px;
       margin-left: 3vw;
-      line-height: 2vw;
+      line-height: 26px;
       font-family: "NeueHaasDisplayBlackItalic";
     }
   }
@@ -187,12 +195,12 @@ nav {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    border-bottom: 1px solid #191919;
+    border-bottom: 1px solid #222;
     .queto_inner {
       color: #61dafb;
       font-family: "NeueHaasDisplayLightItalic";
       letter-spacing: 0.15vw;
-      font-size: 2.5vw;
+      font-size: 32px;
       flex-shrink: 0;
       animation: textSlide 500s infinite;
     }
@@ -229,7 +237,7 @@ nav {
         font-family: "NeueHaasDisplayBlackItalic";
 
         em {
-          -webkit-text-stroke: 1px #191919;
+          -webkit-text-stroke: 1px #222;
           color: transparent;
           font-family: "NeueHaasDisplayBlackItalic";
         }
@@ -262,34 +270,37 @@ nav {
   h2 {
     background-color: #919598;
     width: 100%;
-    font-size: 7vw;
-    -webkit-text-stroke: 1px #191919;
+    height: 15vw;
+    font-size: 120px;
+    -webkit-text-stroke: 1px #222;
     color: transparent;
-    padding: 2vw 0 0 2vw  ;
     font-family: "NeueHaasDisplayBlack";
+    line-height: 15vw;
     em {
+      font-size: 100px;
       font-family: "NeueHaasDisplayBlackItalic";
-      font-size: 7vw;
+      margin: 4vw 0 0 5vw;
     }
   }
   ul {
     width: 100%;
     li {
       background-color: #fff;
-      height: 10vw;
+      height: 11vw;
       width: 100%;
-      padding: 1vw 3vw;
+      padding-left: 3vw;
       display: flex;
+      line-height: 11vw;
 
       p {
-        padding: 1vw;
-        font-size: 7vw;
+        //padding: 1vw;
+        font-size: 100px;
         font-family: "NeueHaasDisplayBlackItalic";
         display: inline-block;
         position: relative;
         // margin: 4vw 0 0 3vw;
         span {
-          font-size: 1.5vw;
+          font-size: 18px;
           font-family: "NEXON Lv1 Gothic OTF";
         }
       }
@@ -309,7 +320,7 @@ nav {
     height: 40vw;
     background-color: #fff;
     margin: 5vw 0 5vw 4vw;
-    border: solid 1px #191919;
+    border: solid 1px #222;
     overflow: hidden;
 
     h3 {
@@ -323,28 +334,33 @@ nav {
       display: flex;
       height: 35vw;
       flex-wrap: wrap;
-      justify-content: space-between;
-      border-top: 1px solid #191919;
 
-      .img {
+      justify-content: space-between;
+      border-top: 1px solid #222;
+      img {
         width: 65vw;
-        height: 100vw;
-        background-image: url(../images/workout01.jpg);
-        background-size: contain;
+        //  height: 100vw;
+        object-fit: contain;
+        align-items: center;
+        object-fit: cover;
+        object-position: center;
+        border-right: 1px solid #222;
+        overflow: hidden;
       }
       .text {
         padding-top: 2vw;
+
         a {
           padding: 0.8vw;
-          border: 1px solid #191919;
-          font-size: 1vw;
+          border: 1px solid #222;
+          font-size: 20px;
         }
         p {
           width: 30vw;
-          padding: 15vw 2vw 3vw 0;
-          font-size: 1vw;
+          padding: 9vw 3vw 3vw 0;
+          font-size: 16px;
           font-family: "NEXON Lv1 Gothic OTF";
-          line-height: 1.4vw;
+          line-height: 18px;
         }
         span {
           font-size: 1.5vw;
@@ -356,7 +372,7 @@ nav {
           position: absolute;
           bottom: 2.7vw;
           border-radius: 50%;
-          background-color: #191919;
+          background-color: #222;
           width: 0.8vw;
           height: 0.8vw;
         }
@@ -367,7 +383,7 @@ nav {
 // #section4
 // #section5
 
-@media (max-width: 960px) {
+@media (max-width: 1020px) {
   #section0 {
     width: 100%;
 
@@ -383,7 +399,7 @@ nav {
       top: 20vh;
       left: 5vw;
       .t2 {
-        -webkit-text-stroke: 1px #191919;
+        -webkit-text-stroke: 1px #222;
       }
     }
 
@@ -430,20 +446,24 @@ nav {
   // #section1
   #section2 {
     width: 100%;
-    height: 150vh;
+    height: 225vh;
 
     .about {
+      justify-content: start;
+      width: 100%;
       p {
         margin: 1vw;
-        width: 1vw;
+        display: inline-block;
+        width: 20vw;
       }
       h2 {
-        padding-left: 30vw;
-        margin: 0 5vw;
+        width: 70vw;
+        margin: 0 5px 0 0;
       }
       span {
-        font-size: 3vw;
-        line-height: 3vw;
+        font-size: 30px;
+
+        line-height: 32px;
       }
     }
     .queto {
@@ -453,22 +473,24 @@ nav {
     }
     .about__inner {
       width: 95vw;
-      height: 200vh;
+      height: 150vh;
       padding-top: 0;
       .about__left {
         width: 100vw;
-        height: 80vw;
+        // height: 100vw;
       }
       .about__right {
         width: 100vw;
+        height: 100vw;
         h3 {
           font-size: 8vw;
           line-height: 8vw;
           text-align: right;
         }
         .text {
-          font-size: 3vw;
-          line-height: 5vw;
+          height: 50vw;
+          font-size: 20px;
+          line-height: 28px;
           bottom: 5vw;
           text-align: right;
         }
@@ -478,19 +500,48 @@ nav {
   // #section2
   #section3 {
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     ul {
       li {
         p {
           span {
-            font-size: 14px;
+            font-size: 16px;
           }
         }
       }
     }
     .workout {
+      height: 60vw;
       h3 {
-        font-size: 8vw;
+        font-size: 6vw;
+        height: 7vw;
+      }
+      .workout__inner {
+        height: 70vw;
+        img {
+          height: 51vw;
+        }
+        .text {
+          a {
+            padding: 0.8vw;
+            border: 1px solid #222;
+            font-size: 1vw;
+          }
+          p {
+            width: 30vw;
+            padding: 2vw 5vw 3vw 0;
+            font-size: 16px;
+            font-family: "NEXON Lv1 Gothic OTF";
+            line-height: 22px;
+          }
+          span {
+            font-size: 2vw;
+          }
+          span::before {
+            width: 1vw;
+            height: 1vw;
+          }
+        }
       }
     }
   }
@@ -503,7 +554,7 @@ nav {
       top: 20vh;
       left: 5vw;
       .t2 {
-        -webkit-text-stroke: 1px #191919;
+        -webkit-text-stroke: 1px #222;
       }
     }
 
