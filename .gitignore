@@ -24,13 +24,8 @@ dist-ssr
 *.sw?
 
 #
-        .firebase/
-        .firebaserc
-        .gitignore
-        counter.js
-        firebase.json
-        javascript.svg
-        package-lock.json
-        package.json
 
-        vite.config.js
+
+
+
+
