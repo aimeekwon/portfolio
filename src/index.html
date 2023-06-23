@@ -17,11 +17,13 @@
         <li class="contact"><a href="#">CONTACT</a></li>
       </ul>
     </nav>
+    <!-- nav -->
     <div id="section1">
       <div class="title">
         <p class="t1">CREATIVE</p>
         <p class="t2">UNIQUE</p>
       </div>
+
       <div class="left">
         <div class="index">
           <h3>INDEX</h3>
@@ -36,7 +38,7 @@
         <p>HYUNJEONG KWON<br />FRONTEND DEVELOPER</p>
       </div>
     </div>
-
+    <!-- #section1 -->
     <div id="section2">
       <div class="about">
         <p>1.</p>
@@ -84,8 +86,8 @@
       </div>
     </div>
     <div id="section3">
-      <div class="title"></div>
       <h2><em>2.</em> WORKOUT</h2>
+
       <ul>
         <li class="s1">
           <p>WEB SITE<span> website를 제작하였습니다</span></p>
@@ -154,5 +156,69 @@
       </div>
     </div>
     <script type="module" src="/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- <script>
+      // 스무스 효과
+      const lenis = new Lenis();
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+    </script> -->
+    <script>
+      const section2 = gsap.utils.toArray("#section2");
+      const section3 = gsap.utils.toArray("#section3");
+      let scrollTop = 0;
+
+      // 글씨들 이질감 효과
+      function section1Scroll() {
+        scrollTop = document.documentElement.scrollTop;
+        //const title = document.querySelector(".title");
+        const section1Top = document.querySelector("#section1");
+        let offset = (scrollTop - section1Top.offsetTop) * 0.3;
+        gsap.to(section2, { duration: 0.8, y: -offset });
+        requestAnimationFrame(section1Scroll);
+      }
+      section1Scroll();
+
+      function section2Scroll() {
+        scrollTop = document.documentElement.scrollTop;
+        //const title = document.querySelector(".title");
+        const section2Top = document.querySelector("#section2");
+        let offset1 = (scrollTop - section2Top.offsetTop) * 0.5;
+        gsap.to(section3, { duration: 0.8, y: -offset });
+        requestAnimationFrame(section2Scroll);
+      }
+      section2Scroll();
+    </script>
+    <!-- <script>
+      const pageUp1 = gsap.utils.toArray(".s1");
+      const pageUp2 = gsap.utils.toArray(".s2");
+      let scrollTop = 0;
+
+      // 글씨들 이질감 효과
+      function section1Scroll() {
+        scrollTop = document.documentElement.scrollTop;
+        // const title = document.querySelector(".title");
+        const section1Top = document.querySelector(".s1");
+        const section2Top = document.querySelector(".s2");
+        let offset = (scrollTop - section1Top.offsetTop) * 0.4;
+        let offset1 = (scrollTop - section2Top.offsetTop) * 0.3;
+        gsap.to(pageUp1, { duration: 0.2, y: -offset });
+        gsap.to(pageUp2, { duration: 0.1, y: -offset1 });
+
+        requestAnimationFrame(section1Scroll);
+      }
+      section1Scroll();
+    </script> -->
   </body>
 </html>
