@@ -147,27 +147,29 @@ nav {
 
   .right {
     width: 50%;
-    //height: 100vh;
-    // background-image: url(../images/profile01.jpg);
+    height: 100vh;
+    background-image: url(../images/profile01.jpg);
     background-size: cover;
     background-color: #ccc;
     position: relative;
     z-index: 1;
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100vh;
+    filter: saturate(0);
+    transition: all ease 0.5s;
+    // img {
+    //   object-fit: cover;
+    //   width: 100%;
+    //   height: 100vh;
 
-      filter: saturate(0);
-      position: relative;
-      transition: all ease 0.5s;
-    }
-    img:hover {
-      filter: saturate(1);
-      position: relative;
-      transition: all ease 0.5s;
-      transform: translate(20px, 0);
-    }
+    //   filter: saturate(0);
+    //   position: relative;
+    //   transition: all ease 0.5s;
+    // }
+    // img:hover {
+    //   filter: saturate(1);
+    //   position: relative;
+    //   transition: all ease 0.5s;
+    //   transform: translate(20px, 0);
+    // }
     p {
       position: absolute;
       bottom: 1vw;
@@ -175,6 +177,11 @@ nav {
       font-size: 24px;
       font-family: "NeueHaasDisplayMediumItalic";
     }
+  }
+  .right:hover {
+    filter: saturate(1);
+    transition: all ease 0.5s;
+    transform: translate(20px, 0);
   }
 }
 // [data-coverflow-overlay] {
