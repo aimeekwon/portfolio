@@ -3,9 +3,11 @@
   padding: 0;
   color: #222222;
   font-family: "NeueHaasDisplayBlack";
+  box-sizing: border-box;
 }
 body {
   overflow-x: hidden;
+  background-color: #fff;
 }
 html {
   scroll-behavior: smooth;

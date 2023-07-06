@@ -64,9 +64,14 @@
       <div id="section2">
         <div class="section__pin">
           <div class="sec2__title">
-            <div class="left">1.</div>
+            <div class="left">
+              <h3>
+                1.<br />
+                <p>"WELCOME TO MY PORTFOLIO</p>
+              </h3>
+            </div>
             <div class="right">
-              <h3>ABOUT</h3>
+              <h3>ABOUT'</h3>
               <!-- <div class="desc">안녕하세요</div> -->
             </div>
           </div>
@@ -98,12 +103,43 @@
       <!-- section2 -->
 
       <div id="section3">
-        <div class="section__pin"></div>
+        <div class="section__pin_1"></div>
       </div>
       <!-- section3 -->
 
       <div id="section4">
-        <div class="section__pin"></div>
+        <div class="section__pin">
+          <div class="sec4__title">
+            <h3>2. </h3>
+            <p><a href="#">WORKOUT'</a></p>
+          </div>
+          <div class="sec4__menu">
+            <ul>
+              <li>WEB STANDARD</li>
+              <li>REACT</li>
+              <li>NEXT.JS</li>
+            </ul>
+          </div>
+
+            <div class="queto">
+              <div class="queto_inner">
+                YOU NEVER FAIL UNTIL YOU STOP TRYING. -ALBERT EINSTEIN. YOU NEVER
+                FAIL UNTIL YOU STOP TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL
+                YOU STOP TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP
+                TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP TRYING.
+                -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP TRYING. -ALBERT
+                EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP TRYING. -ALBERT EINSTEIN.
+                YOU NEVER FAIL UNTIL YOU STOP TRYING. -ALBERT EINSTEIN. YOU NEVER
+                FAIL UNTIL YOU STOP TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL
+                YOU STOP TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP
+                TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP TRYING.
+                -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP TRYING. -ALBERT
+                TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP TRYING.
+                -ALBERT EINSTEIN.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- section4 -->
 
@@ -121,71 +157,95 @@
     <script src="https://unpkg.com/split-type"></script>
     <script>
       // section__pin
-
       gsap.utils.toArray(".section__pin").forEach((item, i) => {
         ScrollTrigger.create({
           trigger: item,
           start: "top top",
           pin: true,
           pinSpacing: false,
-          anticipatePin: 1,
-          //markers: true,
+          scrub: true,
+          markers: false,
+          snap: 1 / 5,
         });
       });
-      ScrollTrigger.create({
-        snap: 1 / 5,
+//      animation
+// .add('start')
+// .to('.animation', {
+//   backgroundColor: 'red'
+// }, 'start');
+
+      gsap.to("#section3", {
+        scrollTrigger: {
+          trigger: "#section3 .section__pin_1",
+          start: "top top",
+          end: "bottom bottom",
+          scrub: true,
+        },
       });
 
-      //
+      //section2_img
       const tl0 = gsap.timeline();
-      tl0.to("#section2 .sec2__desc .left .left__inner");
+      tl0.to("#section2 .section__pin .sec2__desc .left .left__inner img", {
+        y: -300,
+        duration: 10,
+      });
       ScrollTrigger.create({
         animation: tl0,
-        trigger: "#section2 .sec2__desc",
+        duration: 10,
+        trigger: "#section2 .section__pin .sec2__desc .left ",
         start: "top top",
-        end: "+=5000",
-        pin: true,
+        end: "+=700",
         scrub: true,
-        anticipatePin: 1,
-        markers: true,
+        pinSpacing: false,
+        snap: 1 / 2,
       });
+      // section4
+
+
+//       gsap.set("#section4 .sec4__menu ul li", { autoAlpha: 0, y: -100 });
+//       setTimeout(() => {
+//         let tl1 = gsap.timeline();
+
+// tl1.to("#section4 .sec4__menu ul li", {
+//   duration: 1,
+//   autoAlpha: 1,
+//   y: 0,
+//   //stagger: 0.05,
+
+// });
+//       });
+
 
       // text effect
       const targets = gsap.utils.toArray(".split");
       let SplitClient = new SplitType(targets, { type: "lines, words, chars" });
 
-      gsap.set("#intro .hello .char", { autoAlpha: 0, y: -60 });
+      gsap.set("#intro .hello .char", { autoAlpha: 0, y: 200 });
       gsap.set("#section1 .title .t1 .char", { autoAlpha: 0, x: -60 });
       gsap.set("#section1 .title .t2 .char", { autoAlpha: 0, x: -60 });
-      gsap.set("#header", { top: -200 });
-      gsap.set("#section1 .left .text", { autoAlpha: 0 });
+      gsap.set("#section1 .left .text", { autoAlpha: 1 });
       gsap.set("#section1 .left", { autoAlpha: 1, width: "50%" });
-
       setTimeout(() => {
         let tl = gsap.timeline();
 
-        tl.to(
-          "#intro .hello .char",
-          {
-            duration: 0.5,
-            autoAlpha: 1,
-            y: 0,
-            stagger: 0.05,
-            ease: "slow.out",
-          },
-          "-=0.01"
-        );
+        tl.to("#intro .hello .char", {
+          duration: 0.5,
+          autoAlpha: 1,
+          y: 0,
+          stagger: 0.05,
+          ease: "slow.out",
+        });
 
         tl.set("#section1 .right", { autoAlpha: 1 });
-        tl.from("#section1 .right", 1.5, { xPercent: -100, ease: Power2.out });
+        tl.from("#section1 .right", 1.5, { xPercent: 100, ease: Power2.out });
         tl.from(
           "#section1 .right img",
-          2,
+          1,
           {
             xPercent: 100,
             scale: 1.0,
             opacity: 0,
-            delay: -2,
+            delay: -1,
             ease: "slow.out",
           },
           "-=1.3"
@@ -212,9 +272,7 @@
           },
           "-=0.3"
         );
-        tl.to("#header", { top: 0 });
-        tl.to("#section1 .left .text", { autoAlpha: 1 });
-      });
+      }, 100);
     </script>
   </body>
 </html>
