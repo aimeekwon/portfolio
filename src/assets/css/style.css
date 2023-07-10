@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  z-index: 11f1f1f;
+  z-index: 11;
 }
 #header.active {
   background-color: #ffffff1e;
@@ -455,12 +455,6 @@
 }
 #section5 > .sec5-desc > .left {
   width: 50%;
-  /* height: 1000px;
-  background-image: url(../images/profile02.jpg);
-  background-position: center center;
-  filter: grayscale(100%);
-  background-size: cover;
-  background-repeat: no-repeat; */
 }
 #section5 > .sec5-desc > .left > .img {
   width: 80%;
@@ -486,7 +480,7 @@
   font-size: 1.5vw;
   font-weight: 600;
   color: #ccc;
-  padding: 0 0 20px 20px;
+  margin: 0 5%;
 }
 #section5 > .sec5-desc > .right ul {
   width: 90%;
@@ -522,13 +516,16 @@
   /* background-color: #f3d687; */
   padding: 20px;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-image: url(https://images.unsplash.com/photo-1652449823136-b279fbe5dfd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80);
   background-color: #222;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   filter: grayscale(100);
+}
+#section6:hover {
+  transition: all ease 3s;
 }
 
 #section7 {
