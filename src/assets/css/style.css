@@ -1,0 +1,576 @@
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 11f1f1f;
+}
+#header.active {
+  background-color: #ffffff1e;
+  backdrop-filter: blur(20px);
+}
+#header h1 a {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 7px 10px 5px 10px;
+  display: inline-block;
+}
+#header .contact a {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 7px 10px 5px 10px;
+  display: inline-block;
+}
+#section1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+#section1 .left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  padding: 2%;
+}
+#section1 .left h3 {
+  font-size: 28px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+#section1 .left ul li {
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 1.7;
+}
+#section1 .right {
+  visibility: hidden;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+#section1 .right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform-origin: left;
+  filter: saturate(0);
+}
+
+#section1 .title {
+  position: absolute;
+  left: 0%;
+  top: 12%;
+}
+#section1 .title .t1 {
+  font-size: 12vw;
+  font-weight: 800;
+  line-height: 0.8;
+  font-style: italic;
+  padding-right: 40vw;
+  padding-top: 1vw;
+  padding-left: 5vw;
+  white-space: nowrap;
+}
+#section1 .title .t2 {
+  font-size: 12vw;
+  font-weight: 800;
+  line-height: 0.8;
+  padding-left: 30vw;
+  padding-top: 1vw;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 2px #1f1f1f;
+  font-style: italic;
+}
+
+@media (max-width: 800px) {
+  #header {
+    padding: 0;
+  }
+  #header h1 a {
+    font-size: 18px;
+  }
+  #header .contact a {
+    font-size: 18px;
+  }
+  #section1 {
+    flex-direction: column;
+  }
+  #section1 .title {
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #section1 .title .t1 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #section1 .title .t2 {
+    padding-left: 0;
+  }
+  #section1 .left {
+    width: 100%;
+    height: 50%;
+  }
+  #section1 .left .text {
+    display: none;
+  }
+  #section1 .right {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+#section2 {
+  background-color: #ebeae4;
+  padding: 20px;
+}
+
+#section2 > .sec2-title {
+  height: 350px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+#section2 > .sec2-title > .left {
+  width: 50%;
+  font-size: 7vw;
+  font-family: "neue haas grotesk display pro";
+  font-weight: 500;
+  padding: 2vw 2vw 2vw 4vw;
+  line-height: 1;
+}
+#section2 > .sec2-title > .right {
+  width: 50%;
+  font-size: 7vw;
+  font-family: "neue haas grotesk display pro";
+  font-weight: 500;
+  padding: 2vw;
+  line-height: 1;
+}
+#section2 > .sec2-title > .right h2 {
+  font-family: "neue haas grotesk display pro";
+  font-size: 7vw;
+  font-weight: 500;
+  text-transform: capitalize;
+  text-transform: uppercase;
+}
+#section2 > .sec2-title .right pre {
+  font-family: "NanumSquare4";
+  font-size: 18px;
+  white-space: pre-line;
+  line-height: 1.6;
+  margin: 2vw 0;
+}
+
+#section2 .sec2-desc {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+#section2 .sec2-desc .left {
+  width: 50%;
+  height: 1000px;
+  background-image: url(../images/profile02.jpg);
+  background-position: center center;
+  filter: grayscale(100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#section2 .sec2-desc .right {
+  width: 50%;
+  height: 1000px;
+  display: flex;
+  align-items: end;
+  line-height: 1.6;
+  background-color: #fff;
+  padding: 2vw;
+}
+#section2 .sec2-desc .right pre {
+  font-family: "NanumSquare4";
+  font-size: 18px;
+  white-space: pre-line;
+}
+#section2 .sec2-desc .right pre:hover {
+}
+
+#section3 {
+}
+#section3 .title-wrap {
+  padding: 20px;
+}
+#section3 .title-wrap > div {
+  font-size: 7vw;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: 900;
+  padding: 2.6vw 2vw 2vw 4vw;
+  line-height: 0.91;
+  text-transform: uppercase;
+}
+#section3 .title-wrap .sec3-title1 {
+  background-color: #ebeae4;
+  font-weight: 500;
+}
+#section3 .title-wrap .sec3-title2 {
+  background-color: #d4d4d4;
+}
+#section3 .title-wrap .sec3-title3 {
+  background-color: #f3d687;
+}
+#section3 .title-wrap .sec3-title4 {
+  background-color: #919598;
+}
+#section3 .title-wrap .sec3-title5 {
+  background-color: #ebeae4;
+}
+
+#section3 .site-wrap {
+  padding: 20px;
+}
+#section3 .site-wrap .site {
+  border: 1px solid #1f1f1f;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#section3 .site-wrap .site h3 {
+  border-bottom: 1px solid #1f1f1f;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: 900;
+  font-size: 4vw;
+  padding: 0 2vw;
+  line-height: 1.2;
+  padding-top: 0.5vw;
+  width: 100%;
+  /* font-style: italic; */
+}
+#section3 .site-wrap .site .left {
+  width: 60%;
+  height: 100%;
+  border-right: 1px solid #1f1f1f;
+  background-size: cover;
+}
+#section3 .site-wrap .site .left {
+  background-position: center center;
+  background-image: url(../images/gsap.jpg);
+}
+#section3 .site-wrap .site .left.img2 {
+  background-image: url(https://plus.unsplash.com/premium_photo-1672463282497-fac4840e4108?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80);
+}
+#section3 .site-wrap .site .left.img3 {
+  background-image: url(https://images.unsplash.com/photo-1651096034385-f542e876ade7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fCVFQiVBMSU5QyVFQyVBNyU4MXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+  filter: grayscale(100);
+}
+#section3 .site-wrap .site .left.img4 {
+  background-image: url(https://images.unsplash.com/photo-1615309662472-4ca77a77a189?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTM0fHxwcm9ncmFtfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);
+}
+#section3 .site-wrap .site .right {
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+#section3 .site-wrap .site .right span {
+  border: 1px solid #1f1f1f;
+  font-size: 20px;
+  padding: 5px 40px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+#section3 .site-wrap .site .right p {
+  font-family: "NanumSquare4";
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+#section3 .site-wrap .site .right h2 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+/* section4 */
+#section4 {
+  background-color: #ebeae4;
+}
+#section4 .title-wrap {
+  padding: 20px;
+}
+#section4 .title-wrap > div {
+  font-size: 7vw;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: 900;
+  padding: 2.6vw 2vw 2vw 4vw;
+  line-height: 0.91;
+  text-transform: uppercase;
+}
+
+#section4 .title-wrap .sec4-title1 {
+  background-color: #fff;
+  font-weight: 500;
+}
+#section4 .title-wrap .sec4-title2 {
+  background-color: #d4d4d4;
+}
+#section4 .title-wrap .sec4-title3 {
+  background-color: #f3d687;
+}
+#section4 .title-wrap .sec4-title4 {
+  background-color: #919598;
+}
+#section4 .title-wrap .sec4-title5 {
+  background-color: #fff;
+}
+#section4 .title-wrap .sec4-title6 {
+  background-color: #d4d4d4;
+}
+#section4 .script-wrap {
+  margin: 20px;
+  height: 21f1f1fpx;
+  border-top: 1px solid #939a93;
+}
+#section4 .script-wrap .script {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #939a93;
+  border-bottom: 1px solid #939a93;
+  margin-top: 40px;
+}
+#section4 .script-wrap .script .left {
+  width: 50%;
+  padding-right: 1%;
+  border-right: 1px solid #939a93;
+}
+#section4 .script-wrap .script .right {
+  width: 50%;
+  padding-left: 1%;
+}
+
+#section4 .script-wrap .script .view {
+  margin-top: 10vh;
+  background-color: #fff;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section4 .script-wrap .script .view span {
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 3vw;
+  font-weight: 900;
+  color: #fff;
+}
+#section4 .script-wrap .script ul {
+  border-top: 1px solid #939a93;
+  margin-top: 20px;
+}
+#section4 .script-wrap .script li {
+  padding: 10px;
+  border-bottom: 1px solid #939a93;
+  font-family: "NanumSquare4";
+}
+#section4 .script-wrap .script .view {
+  background-size: cover;
+  transition: all ease 0.5s;
+  filter: saturate(0);
+}
+#section4 .script-wrap .script .view:hover {
+  transform: scale(0.98);
+  filter: saturate(1);
+  transition: all ease 0.5s;
+}
+#section4 .script-wrap .script .title2 {
+  background-image: url(../images/para.jpg);
+}
+#section4 .script-wrap .script .title3 {
+  background-image: url(../images/game.jpg);
+}
+#section4 .script-wrap .script .title4 {
+  background-image: url(../images/music.jpg);
+}
+#section4 .script-wrap .script .title5 {
+  background-image: url(../images/quiz.jpg);
+}
+#section4 .script-wrap .script .title6 {
+  background-image: url(../images/mouse.jpg);
+}
+
+#section5 {
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+}
+#section5 .sec5-title {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+#section5 .sec5-title .left {
+  width: 10%;
+  font-size: 7vw;
+  font-family: "neue haas grotesk display pro";
+  font-weight: 100;
+  padding: 2vw 2vw 2vw 4vw;
+  line-height: 1;
+}
+#section5 .sec5-title .right {
+  width: 50%;
+  font-size: 7vw;
+  font-family: "neue haas grotesk display pro";
+  font-weight: 900;
+  padding: 2vw 2vw 2vw 4vw;
+  line-height: 1;
+}
+#section5 .sec5-title .right h2 {
+  font-family: "neue haas grotesk display pro";
+  font-size: 7vw;
+  line-height: 1.5;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+#section5 > .sec5-desc {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+#section5 > .sec5-desc > .left {
+  width: 50%;
+  /* height: 1000px;
+  background-image: url(../images/profile02.jpg);
+  background-position: center center;
+  filter: grayscale(100%);
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+#section5 > .sec5-desc > .left > .img {
+  width: 80%;
+  height: 100%;
+  background-image: url(../images/project.jpg);
+  margin: 0 auto;
+  background-size: cover;
+}
+#section5 > .sec5-desc > .right {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  /* align-items: end; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  background-color: #fff;
+
+  text-transform: uppercase;
+}
+#section5 > .sec5-desc > .right > h3 {
+  font-family: "neue haas grotesk display pro";
+  font-size: 1.5vw;
+  font-weight: 600;
+  color: #ccc;
+  padding: 0 0 20px 20px;
+}
+#section5 > .sec5-desc > .right ul {
+  width: 90%;
+  margin: 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#section5 > .sec5-desc > .right ul li {
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  padding-left: 20px;
+  position: relative;
+}
+#section5 > .sec5-desc > .right ul li a {
+  font-size: 16px;
+  line-height: 50px;
+  width: 100%;
+}
+#section5 > .sec5-desc > .right > ul > li a:before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 0;
+  background-color: #939a93;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+#section6 {
+  /* background-color: #f3d687; */
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1652449823136-b279fbe5dfd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80);
+  background-color: #222;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: grayscale(100);
+}
+
+#section7 {
+  background-color: #f3d687;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+}
+#section7 .sec7-title {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+
+  /* background-color: #fff; */
+  /* border-bottom: 10px #222 solid; */
+}
+#section7 .sec7-title .left {
+  width: 100%;
+  font-size: 7vw;
+  font-family: "neue haas grotesk display pro";
+  font-weight: 900;
+  padding: 2vw 2vw 2vw 4vw;
+  line-height: 1;
+  font-style: italic;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px #1f1f1f;
+}
+#section7 .sec7-title .right {
+  width: 100%;
+  font-family: "neue haas grotesk display pro";
+  padding: 2vw 2vw 2vw 4vw;
+  line-height: 1;
+  background-color: #ebeae4;
+}
+#section7 .sec7-title .right h2 {
+  font-size: 7vw;
+  font-weight: 900;
+  font-style: italic;
+  /* 
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 1px #1f1f1f; */
+}

@@ -2,254 +2,331 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
 
-    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js"></script>
   </head>
-
   <body>
-    <!-- loader -->
-    <div class="container">
-      <div class="circle"></div>
-      <div class="square"></div>
-      <div class="triangle"></div>
-      <div class="logo">PORTFOLIO<br />comming</div>
-      <div class="shadow"></div>
-    </div>
-    <!-- //loader -->
-    <!-- mouse -->
-    <div class="mouse__cursor"></div>
-    <!-- //mouse -->
-
-    <nav>
-      <ul>
-        <li class="port"><a href="#">PORTFOLIO</a></li>
-        <li class="contact">
-          <a href="#">CONTACT</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- nav -->
-    <div id="intro">
-      <div class="section__pin">
-        <div class="hello split">Hello</div>
+    <header id="header">
+      <h1><a href="#">port</a></h1>
+      <div class="contact">
+        <a href="#">contact</a>
       </div>
-    </div>
+    </header>
+    <!-- //header -->
 
-    <!-- intro -->
-    <main>
-      <div id="section1">
-        <div class="section__pin">
-          <div class="left">
-            <div class="text">
-              <h3>index</h3>
+    <main id="contents">
+      <section id="section1">
+        <div class="left">
+          <div class="text">
+            <h3>index</h3>
+            <ul>
+              <li>about</li>
+              <li>work</li>
+              <li>contact</li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <img src="assets/images/profile01.jpg" alt="" />
+        </div>
+        <div class="title">
+          <div class="t1 split">CREATIVE</div>
+          <div class="t2 split">UNIQUE</div>
+        </div>
+      </section>
+      <!-- //section1 -->
+
+      <section id="section2">
+        <div class="sec2-title">
+          <span class="left">1.</span>
+          <div class="right">
+            <h2>about me</h2>
+            <pre>
+안녕하세요! 현재 8년 차 퍼블리셔로 활동하고 있는 권현정 입니다.
+최근 프론트엔드 개발에 대한 열정이 높아져, 프론트엔드 개발자로의
+전환을 결심했습니다.
+            </pre>
+          </div>
+        </div>
+        <div class="sec2-desc">
+          <div class="left"></div>
+          <div class="right">
+            <pre>
+퍼블리셔로서 일하는 동안 
+효율적인 코드 작성과 웹 사이트의 모바일 호환성을 높이기 위한 
+CSS3와 반응형 웹을 작업 했습니다.
+이 업무를 통해 웹 사이트의 성능을 향상시키고 
+사용자들의 만족도를 높일 수 있었습니다. 
+
+프론트엔드 개발에 대한 지식을 향상시키기 위해
+최근 몇 개월 동안 JAVA기반 스마트웹&앱 개발자양성 과정을 수료 하였고, 
+SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다. 
+또한 친구들과 조별 프로젝트를 통해 실전 경험을 쌓았습니다. 
+예를 들어, 사이트를 구상, 구축하고, 개발하여 배포, php로 데이터베이스를 연동하여
+사용자들의 피드백을 수집하고 개선하는 과정을 거쳤습니다. 
+이를 통해 학습에 집중하는 능력과 새로운 기술에 대한 빠른 적응력을 
+발휘할 수 있었습니다. 
+
+저는 변화하는 웹 기술에 열려있으며 새로운 도전에 대한 두려움이 없습니다. 
+비즈니스 요구 사항과 사용자 경험을 충족하기 위해
+새로운 프레임워크나 라이브러리에 도전하는 것을 즐깁니다. 
+또한, 문제 해결 과정에서 유연하게 대처하고 적절한 대안을 모색하는 능력을
+보유하고 있습니다. 프론트엔드 개발자로서의 역량을 확장하고 싶어서 
+이 자리에 지원서를 제출하게 되었습니다. 
+저는 전문적으로 성장하고, 협업하며, 혁신적인 솔루션을 창출하며 기여하고 싶습니다. 
+기회를 주신다면, 최선을 다해 결과를 돌려드리도록 하겠습니다.
+            </pre>
+          </div>
+        </div>
+      </section>
+      <!-- //section2 -->
+
+      <section id="section3">
+        <div class="title-wrap">
+          <div class="sec3-title1">2.</div>
+          <div class="sec3-title2">webstandard site</div>
+          <div class="sec3-title3">react.js site</div>
+          <div class="sec3-title4">vue.js site</div>
+          <div class="sec3-title5">next.js site</div>
+        </div>
+        <div class="site-wrap">
+          <div class="site site1">
+            <h3>WEBSTANDARD SITE</h3>
+            <div class="left img1"></div>
+            <div class="right">
+              <span>view</span><span>code</span>
+              <p>
+                웹표준을 준수한 사이트 입니다. HTML5, CSS3를 기반으로 사이트를
+                구축하고, ES6문법에 기반하여 최신 트랜드에 맞는 JAVASCRIPT
+                코드를 작성하였습니다. 또한 다양한 브라우저에서 불편함 없이
+                사용할 수 있도록 최적화 한 사이트 입니다.
+              </p>
+              <h2>#12 Time</h2>
+            </div>
+          </div>
+          <div class="site site1">
+            <h3>REACT SITE</h3>
+            <div class="left img2"></div>
+            <div class="right">
+              <span>view</span><span>code</span>
+              <p>
+                REACT문법를 활용하여 구축한 사이트입니다. 컴포넌트를 기반으로
+                모듈화 된 코드로 재사용성과 유지보수를 용이하게 작성하였습니다.
+                웹표준을 준수하였으며 다양한 브라우저에서 불편함 없이 사용할 수
+                있도록 최적화 한 사이트 입니다.
+              </p>
+              <h2>#12 Time</h2>
+            </div>
+          </div>
+          <div class="site site1">
+            <h3>VUE SITE</h3>
+            <div class="left img3"></div>
+            <div class="right">
+              <span>view</span><span>code</span>
+              <p>
+                VUE문법를 활용하여 구축한 사이트입니다. 코드의 모듈화를 통해
+                통해 유지보수를 용이하게 작성하였습니다. 웹표준을 준수하였으며
+                다양한 브라우저에서 불편함 없이 사용할 수 있도록 최적화 한
+                사이트 입니다.
+              </p>
+              <h2>#12 Time</h2>
+            </div>
+          </div>
+          <div class="site site1">
+            <h3>NEXT SITE</h3>
+            <div class="left img4"></div>
+            <div class="right">
+              <span>view</span><span>code</span>
+              <p>
+                NEXT.JS문법를 활용하여 구축한 사이트입니다. REACT와 같이
+                컴포넌트를 기반으로 모듈화 된 코드로 재사용성과 유지보수를
+                용이하게 작성하였습니다. 웹표준을 준수하였으며 다양한
+                브라우저에서 불편함 없이 사용할 수 있도록 최적화 한 사이트
+                입니다.
+              </p>
+              <h2>#12 Time</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //section3 -->
+
+      <section id="section4">
+        <div class="title-wrap">
+          <div class="sec4-title1">3.</div>
+          <div class="sec4-title2">Parallax Effect</div>
+          <div class="sec4-title3">quiz Effect</div>
+          <div class="sec4-title4">game Effect</div>
+          <div class="sec4-title5">search Effect</div>
+          <div class="sec4-title6">gsap Effect</div>
+        </div>
+        <div class="script-wrap">
+          <div class="script">
+            <div class="left">
+              <div class="view title2">
+                <span>PARALLAX EFFECT</span>
+              </div>
               <ul>
-                <li><a href="#"> about</a></li>
-                <li><a href="#">work</a></li>
-                <li><a href="#">contact</a></li>
+                <li>강력한 스크롤 제어</li>
+                <li>애니메이션 트리거 설정</li>
+                <li>다양한 애니메이션 유형</li>
+                <li>반응형 지원</li>
+                <li>scrollTrigger</li>
+              </ul>
+            </div>
+            <div class="right">
+              <div class="view title3">
+                <span>QUIZ EFFECT</span>
+              </div>
+              <ul>
+                <li>강력한 스크롤 제어</li>
+                <li>애니메이션 트리거 설정</li>
+                <li>다양한 애니메이션 유형</li>
+                <li>반응형 지원</li>
+                <li>scrollTrigger</li>
               </ul>
             </div>
           </div>
+          <div class="script">
+            <div class="left">
+              <div class="view title4">
+                <span>GAME EFFECT</span>
+              </div>
+              <ul>
+                <li>강력한 스크롤 제어</li>
+                <li>애니메이션 트리거 설정</li>
+                <li>다양한 애니메이션 유형</li>
+                <li>반응형 지원</li>
+                <li>scrollTrigger</li>
+              </ul>
+            </div>
+            <div class="right">
+              <div class="view title5">
+                <span>SEARCH EFFECT</span>
+              </div>
+              <ul>
+                <li>강력한 스크롤 제어</li>
+                <li>애니메이션 트리거 설정</li>
+                <li>다양한 애니메이션 유형</li>
+                <li>반응형 지원</li>
+                <li>scrollTrigger</li>
+              </ul>
+            </div>
+          </div>
+          <div class="script">
+            <div class="left">
+              <div class="view title6">
+                <span>GSAP EFFECT</span>
+              </div>
+              <ul>
+                <li>강력한 스크롤 제어</li>
+                <li>애니메이션 트리거 설정</li>
+                <li>다양한 애니메이션 유형</li>
+                <li>반응형 지원</li>
+                <li>scrollTrigger</li>
+              </ul>
+            </div>
+            <div class="right">
+              <div class="view">
+                <span>MOUSE EFFECT</span>
+              </div>
+              <ul>
+                <li>강력한 스크롤 제어</li>
+                <li>애니메이션 트리거 설정</li>
+                <li>다양한 애니메이션 유형</li>
+                <li>반응형 지원</li>
+                <li>scrollTrigger</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //section4 -->
+
+      <section id="section5">
+        <div class="sec5-title">
+          <span class="left">4.</span>
           <div class="right">
-            <span>developer<br />hyunjeong kwon</span>
-            <img src="./images/profile01.jpg" alt="" />
-          </div>
-          <div class="title">
-            <div class="t1 split">CREATIVE</div>
-            <div class="t2 split">UNIQUE</div>
+            <h2>OVERVIEW</h2>
           </div>
         </div>
-      </div>
-      <!-- section1 -->
-      <div id="section2">
-        <div class="section__pin">
-          <div class="sec2__title">
-            <div class="left">
-              <h3>
-                1.<br />
-                <p>"WELCOME TO MY PORTFOLIO</p>
-              </h3>
-            </div>
-            <div class="right">
-              <h3>ABOUT'</h3>
-              <!-- <div class="desc">안녕하세요</div> -->
-            </div>
+        <div class="sec5-desc">
+          <div class="left">
+            <div class="img"></div>
           </div>
-          <div class="sec2__desc">
-            <div class="left">
-              <div class="left__inner">
-                <img src="./images/profile02.jpg" alt="" />
-              </div>
-            </div>
-            <div class="right">
-              <p>enterprise<br /><em>constructive</em></p>
-              <div class="text">
-                유연하고 담대하게 발전을 바라보는, 권현정입니다. <br />
-                <em>'가능성 옹호론자'</em> 라는 말을 "팩트풀니스"라는 책에서
-                알게 되었습니다.<br />
-                저자의 가치관이라고 했습니다. 저 역시 같은 방향을 바라보고
-                싶어<br />
-                적어 보았습니다.
-                <em
-                  >발전적으로 바라보고, 명확하게 이해하며, 합리적으로<br />
-                  생각하고, 건설적이고 유연한 태도로 직무에 임하는 것.</em
-                >
-                <br />늘 이러한 생각과 태도로 임하는 퍼블리셔가 되고 싶습니다 .
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- section2 -->
-
-      <div id="section3">
-        <div class="section__pin_1"></div>
-      </div>
-      <!-- section3 -->
-
-      <div id="section4">
-        <div class="section__pin">
-          <div class="sec4__title">
-            <h3>2. </h3>
-            <p><a href="#">WORKOUT'</a></p>
-          </div>
-          <div class="sec4__menu">
+          <div class="right">
+            <h3>PROJECTS</h3>
             <ul>
-              <li>WEB STANDARD</li>
-              <li>REACT</li>
-              <li>NEXT.JS</li>
+              <li><a href="#">webstandard</a></li>
+              <li><a href="#">react</a></li>
+              <li><a href="#">vue</a></li>
+              <li><a href="#">next</a></li>
+              <li><a href="#">parallax</a></li>
+              <li><a href="#">quiz</a></li>
+              <li><a href="#">game</a></li>
+              <li><a href="#">search</a></li>
+              <li><a href="#">gsap</a></li>
             </ul>
           </div>
-
-            <div class="queto">
-              <div class="queto_inner">
-                YOU NEVER FAIL UNTIL YOU STOP TRYING. -ALBERT EINSTEIN. YOU NEVER
-                FAIL UNTIL YOU STOP TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL
-                YOU STOP TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP
-                TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP TRYING.
-                -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP TRYING. -ALBERT
-                EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP TRYING. -ALBERT EINSTEIN.
-                YOU NEVER FAIL UNTIL YOU STOP TRYING. -ALBERT EINSTEIN. YOU NEVER
-                FAIL UNTIL YOU STOP TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL
-                YOU STOP TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP
-                TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP TRYING.
-                -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP TRYING. -ALBERT
-                TRYING. -ALBERT EINSTEIN. YOU NEVER FAIL UNTIL YOU STOP TRYING.
-                -ALBERT EINSTEIN.
-              </div>
-            </div>
+        </div>
+      </section>
+      <!-- //section5 -->
+      <section id="section6">
+        <img src="" alt="" />
+      </section>
+      <section id="section7">
+        <div class="sec7-title">
+          <div class="left">5.</div>
+          <div class="right">
+            <h2>CONTACT</h2>
+          </div>
+          <div class="sec7-desc">
+            <div class="left"></div>
+            <div class="right"></div>
           </div>
         </div>
-      </div>
-      <!-- section4 -->
-
-      <div id="section5">
-        <div class="section__pin"></div>
-      </div>
-      <!-- section5 -->
+      </section>
+      <!-- //section6 -->
     </main>
+    <!-- //contents -->
 
-    <script type="module" src="/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
+
     <script>
-      // section__pin
-      gsap.utils.toArray(".section__pin").forEach((item, i) => {
-        ScrollTrigger.create({
-          trigger: item,
-          start: "top top",
-          pin: true,
-          pinSpacing: false,
-          scrub: true,
-          markers: false,
-          snap: 1 / 5,
-        });
-      });
-//      animation
-// .add('start')
-// .to('.animation', {
-//   backgroundColor: 'red'
-// }, 'start');
-
-      gsap.to("#section3", {
-        scrollTrigger: {
-          trigger: "#section3 .section__pin_1",
-          start: "top top",
-          end: "bottom bottom",
-          scrub: true,
-        },
-      });
-
-      //section2_img
-      const tl0 = gsap.timeline();
-      tl0.to("#section2 .section__pin .sec2__desc .left .left__inner img", {
-        y: -300,
-        duration: 10,
-      });
-      ScrollTrigger.create({
-        animation: tl0,
-        duration: 10,
-        trigger: "#section2 .section__pin .sec2__desc .left ",
-        start: "top top",
-        end: "+=700",
-        scrub: true,
-        pinSpacing: false,
-        snap: 1 / 2,
-      });
-      // section4
-
-
-//       gsap.set("#section4 .sec4__menu ul li", { autoAlpha: 0, y: -100 });
-//       setTimeout(() => {
-//         let tl1 = gsap.timeline();
-
-// tl1.to("#section4 .sec4__menu ul li", {
-//   duration: 1,
-//   autoAlpha: 1,
-//   y: 0,
-//   //stagger: 0.05,
-
-// });
-//       });
-
-
-      // text effect
       const targets = gsap.utils.toArray(".split");
       let SplitClient = new SplitType(targets, { type: "lines, words, chars" });
 
-      gsap.set("#intro .hello .char", { autoAlpha: 0, y: 200 });
       gsap.set("#section1 .title .t1 .char", { autoAlpha: 0, x: -60 });
       gsap.set("#section1 .title .t2 .char", { autoAlpha: 0, x: -60 });
-      gsap.set("#section1 .left .text", { autoAlpha: 1 });
+      gsap.set("#header", { top: -200 });
+      gsap.set("#section1 .left .text", { autoAlpha: 0 });
       gsap.set("#section1 .left", { autoAlpha: 1, width: "50%" });
+
       setTimeout(() => {
         let tl = gsap.timeline();
-
-        tl.to("#intro .hello .char", {
-          duration: 0.5,
-          autoAlpha: 1,
-          y: 0,
-          stagger: 0.05,
-          ease: "slow.out",
-        });
-
         tl.set("#section1 .right", { autoAlpha: 1 });
-        tl.from("#section1 .right", 1.5, { xPercent: 100, ease: Power2.out });
-        tl.from(
-          "#section1 .right img",
-          1,
-          {
-            xPercent: 100,
-            scale: 1.0,
-            opacity: 0,
-            delay: -1,
-            ease: "slow.out",
-          },
-          "-=1.3"
-        );
+        tl.from("#section1 .right", 1.5, { xPercent: -100, ease: Power2.out });
+        tl.from("#section1 .right img", 1.5, {
+          xPercent: 100,
+          scale: 1.3,
+          delay: -1.5,
+          ease: Power3.out,
+        });
         tl.to(
           "#section1 .title .t1 .char",
           {
@@ -259,7 +336,7 @@
             stagger: 0.04,
             ease: "slow.out",
           },
-          "-=0.3"
+          "-=0.5"
         );
         tl.to(
           "#section1 .title .t2 .char",
@@ -270,9 +347,11 @@
             stagger: 0.04,
             ease: "slow.out",
           },
-          "-=0.3"
+          "-=0.5"
         );
-      }, 100);
+        tl.to("#header", { top: 0 });
+        tl.to("#section1 .left .text", { autoAlpha: 1 });
+      }, 2000);
     </script>
   </body>
 </html>
