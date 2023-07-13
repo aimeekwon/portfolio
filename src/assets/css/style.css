@@ -1,3 +1,8 @@
+/* responsable */
+/* 1280 */
+/* 780 */
+
+/* header */
 #header {
   position: fixed;
   left: 0;
@@ -31,6 +36,7 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
 }
 #section1 .left {
   width: 50%;
@@ -66,7 +72,7 @@
 
 #section1 .title {
   position: absolute;
-  left: 0%;
+  left: 10%;
   top: 12%;
 }
 #section1 .title .t1 {
@@ -131,26 +137,33 @@
 }
 
 #section2 {
+  width: 100vw;
+  height: 136vh;
   background-color: #ebeae4;
   padding: 20px;
 }
 
 #section2 > .sec2-title {
-  height: 350px;
+  height: 30vh;
   background-color: #fff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  position: relative;
+  border-bottom: 5px #1f1f1f solid;
 }
 #section2 > .sec2-title > .left {
-  width: 50%;
+  width: 48%;
+  height: 50%;
   font-size: 7vw;
   font-family: "neue haas grotesk display pro";
-  font-weight: 500;
+  font-weight: 100;
   padding: 2vw 2vw 2vw 4vw;
   line-height: 1;
 }
 #section2 > .sec2-title > .right {
-  width: 50%;
+  width: 52%;
+  height: 50%;
   font-size: 7vw;
   font-family: "neue haas grotesk display pro";
   font-weight: 500;
@@ -159,36 +172,42 @@
 }
 #section2 > .sec2-title > .right h2 {
   font-family: "neue haas grotesk display pro";
-  font-size: 7vw;
+  font-size: 110px;
   font-weight: 500;
   text-transform: capitalize;
   text-transform: uppercase;
 }
-#section2 > .sec2-title .right pre {
+#section2 > .sec2-title p {
   font-family: "NanumSquare4";
   font-size: 18px;
-  white-space: pre-line;
+  /* white-space: pre-line; */
   line-height: 1.6;
   margin: 2vw 0;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
 
 #section2 .sec2-desc {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 20px;
   justify-content: space-between;
 }
 #section2 .sec2-desc .left {
   width: 50%;
-  height: 1000px;
-  background-image: url(../images/profile02.jpg);
-  background-position: center center;
-  filter: grayscale(100%);
+  height: 100vh;
+  background-image: url(../images/profile4.jpg);
+  background-position: bottom;
+  /* filter: grayscale(100%); */
   background-size: cover;
   background-repeat: no-repeat;
 }
 #section2 .sec2-desc .right {
   width: 50%;
-  height: 1000px;
+  height: 100vh;
+
   display: flex;
   align-items: end;
   line-height: 1.6;
@@ -204,9 +223,12 @@
 }
 
 #section3 {
+  width: 100%;
+  /* height: 400vh; */
 }
 #section3 .title-wrap {
   padding: 20px;
+  /* height: 70vh; */
 }
 #section3 .title-wrap > div {
   font-size: 7vw;
@@ -234,12 +256,13 @@
 }
 
 #section3 .site-wrap {
+  width: 100%;
   padding: 20px;
 }
 #section3 .site-wrap .site {
   border: 1px solid #1f1f1f;
   width: 100%;
-  height: 600px;
+  height: 70vh;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -278,18 +301,27 @@
 }
 #section3 .site-wrap .site .right {
   width: 40%;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
 }
-#section3 .site-wrap .site .right span {
+#section3 .site-wrap .site .right a span {
   border: 1px solid #1f1f1f;
   font-size: 20px;
   padding: 5px 40px;
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 40px;
+  transition: all ease 1.5s;
+}
+#section3 .site-wrap .site .right a:hover span {
+  /* background-color: #ebeae4; */
+  transition: all ease 1.5s;
+  font-size: 20px;
+  /* border: none; */
+  transform: scale(0.98);
+  font-weight: 600;
 }
 #section3 .site-wrap .site .right p {
   font-family: "NanumSquare4";
@@ -411,6 +443,9 @@
 #section4 .script-wrap .script .title6 {
   background-image: url(../images/mouse.jpg);
 }
+#section4 .script-wrap .script .title7 {
+  background-image: url(../images/mouse.jpg);
+}
 
 #section5 {
   background-color: #fff;
@@ -437,7 +472,7 @@
   font-size: 7vw;
   font-family: "neue haas grotesk display pro";
   font-weight: 900;
-  padding: 2vw 2vw 2vw 4vw;
+  padding: 2vw 2vw 2vw 1.5vw;
   line-height: 1;
 }
 #section5 .sec5-title .right h2 {
@@ -477,7 +512,7 @@
 }
 #section5 > .sec5-desc > .right > h3 {
   font-family: "neue haas grotesk display pro";
-  font-size: 1.5vw;
+  font-size: 28px;
   font-weight: 600;
   color: #ccc;
   margin: 0 5%;
@@ -492,14 +527,22 @@
 #section5 > .sec5-desc > .right ul li {
   height: 50px;
   width: 100%;
-  border-bottom: 1px solid #000;
-  padding-left: 20px;
+  border-bottom: 1px solid #222;
+  /* padding-left: 20px; */
   position: relative;
 }
 #section5 > .sec5-desc > .right ul li a {
   font-size: 16px;
   line-height: 50px;
   width: 100%;
+  font-size: 18px;
+  color: #1f1f1f;
+  transition: all ease 1s;
+}
+#section5 > .sec5-desc > .right ul li a:hover {
+  transition: all ease 0.3;
+  color: #1f1f1f;
+  font-weight: 600;
 }
 #section5 > .sec5-desc > .right > ul > li a:before {
   content: "";
@@ -532,10 +575,11 @@
   background-color: #f3d687;
   padding: 20px;
   width: 100%;
-  height: 100vh;
+  /* height: 120vh; */
 }
 #section7 .sec7-title {
   width: 100%;
+  /* height: 40vh; */
   /* height: 200px; */
   /* display: flex;
   flex-wrap: wrap; */
@@ -576,12 +620,21 @@
   flex-wrap: wrap;
 }
 #section7 .sec7-desc .left {
-  width: 50%;
-  height: 500px;
+  width: 40%;
+  height: 60vh;
   border-right: 1px solid #222;
+  /* overflow: hidden; */
+}
+#section7 .sec7-desc .left img {
+  width: 98%;
+  height: 98%;
+  margin: 1%;
+  object-fit: cover;
+  object-position: bottom;
+  filter: grayscale(80);
 }
 #section7 .sec7-desc .right {
-  width: 50%;
+  width: 60%;
   height: 500px;
   color: #222;
   font-family: "neue haas grotesk display pro";
@@ -589,29 +642,187 @@
 }
 #section7 .sec7-desc .right h3 {
   font-family: "neue haas grotesk display pro";
-  font-size: 1.8vw;
+  font-size: 28px;
   font-weight: 600;
   color: #ccc;
+  line-height: 28px;
   /* margin: 0 5%; */
 }
-#section7 .sec7-desc .right ul {
-  padding: 20px 0;
+#section7 .sec7-desc .right .sec7-ul {
+  padding: 10px 0 0 0;
   font-family: "neue haas grotesk display pro";
 }
-#section7 .sec7-desc .right ul > li {
+#section7 .sec7-desc .right .sec7-ul > li {
   border-bottom: 1px solid #ccc;
+  position: relative;
   /* background-color: red; */
-  margin-top: 20px;
+}
+#section7 .sec7-desc .right .sec7-ul > li > a:before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color: #939a93;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+#section7 .sec7-desc .right .sec7-ul > li > a {
+  padding: 10px 0;
+  font-size: 26px;
+  font-weight: 600;
+  color: #1f1f1f;
+  line-height: 60px;
+}
+#section7 .sec7-desc .right .sec7-ul > li > a > em {
+  color: #d4d4d4;
+  letter-spacing: 0px;
+  font-weight: 600;
 }
 
-#section7 .sec7-desc .right ul li a {
-  padding: 10px 0;
-  font-size: 1.3vw;
-  font-weight: 600;
-  color: #222;
-  line-height: 2;
+#section7 .sec7-desc .right .sec7-ul > li > .icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3%;
 }
-#section7 .sec7-desc .right ul li a em {
-  color: #aaa;
-  letter-spacing: 1px;
+#section7 .sec7-desc .right .sec7-ul > li > .icon > li {
+  display: inline-block;
+  width: 50px;
+  height: 5px;
+}
+
+#section7 .sec7-desc .right form {
+  position: relative;
+  margin-top: 20px;
+}
+#section7 .sec7-desc .right form h2 {
+  font-family: "neue haas grotesk display pro";
+  font-size: 28px;
+  font-weight: 600;
+  color: #ccc;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+#section7 .sec7-desc .right form label {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "neue haas grotesk display pro";
+  font-size: 28px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 40px;
+  padding: 5px 0;
+}
+#section7 .sec7-desc .right form label input {
+  width: 30vw;
+  border: solid 1px #ccc;
+}
+#section7 .sec7-desc .right form label textarea {
+  letter-spacing: pre;
+  width: 30vw;
+  height: 180px;
+  resize: none;
+  border: solid 1px #ccc;
+}
+#section7 .sec7-desc .right form button {
+  width: 20vw;
+  height: 50px;
+  position: absolute;
+  bottom: 3%;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+#section7 .sec7-desc .right form button:hover {
+  background-color: #919598;
+  border: none;
+  transition: all ease 1s;
+}
+/* responsable */
+@media (max-width: 1200px) {
+  /* #section1 */
+  #section1 .left {
+    width: 100%;
+    height: 40vh;
+  }
+  #section1 .right {
+    width: 100%;
+    height: 60vh;
+  }
+  #section1 .right img {
+    object-position: top;
+    object-fit: cover;
+  }
+  #section1 .title {
+    position: absolute;
+    left: 0%;
+    top: 10%;
+  }
+  #section1 .title .t1 {
+    padding-top: 0;
+    font-size: 130px;
+  }
+  #section1 .title .t2 {
+    font-size: 130px;
+    -webkit-text-stroke: 1px #1f1f1f;
+  }
+  #section1 .left .text {
+    display: none;
+  }
+  /* section2 */
+  #section2 {
+    height: 2000px;
+  }
+  #section2 > .sec2-title {
+    height: 25vh;
+  }
+  #section2 > .sec2-title .left {
+    height: 50%;
+  }
+  #section2 > .sec2-title > .left {
+    font-size: 90px;
+    width: 25vw;
+  }
+  #section2 > .sec2-title > .right {
+    width: 65vw;
+  }
+  #section2 > .sec2-title > .right h2 {
+    font-size: 90px;
+    text-align: right;
+  }
+  #section2 > .sec2-title p {
+    width: 85%;
+    top: 50%;
+    left: 5%;
+    white-space: normal;
+  }
+  #section2 .sec2-desc {
+  }
+  #section2 .sec2-desc .left {
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+  }
+  #section2 .sec2-desc .right {
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 3%;
+  }
+  #section2 .sec2-desc .right pre {
+  }
+  /* #section3  */
+  #section3 {
+    width: 100%;
+    /* height: 100vh; */
+  }
+  #section4 {
+    width: 100%;
+    /* height: 100vh; */
+  }
 }
