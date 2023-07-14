@@ -200,7 +200,7 @@
   height: 100vh;
   background-image: url(../images/profile02.jpg);
   background-position: bottom;
-  /* filter: grayscale(100%); */
+  filter: grayscale(100%);
   background-size: cover;
   background-repeat: no-repeat;
 }

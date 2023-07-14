@@ -18,7 +18,7 @@
     
     
     <script src="assets/js/script.js"></script>
-    <link rel="stylesheet" href="/assets/index-e2c2c04f.css">
+    <link rel="stylesheet" href="/assets/index-b637d81a.css">
   </head>
   <body>
     <!-- loader -->
@@ -30,6 +30,8 @@
       <div class="shadow"></div>
     </div>
     <!-- //loader -->
+    <!-- top button -->
+    <div class="topBtn" onclick="window.scrollTo(0,0);">TOP</div>
     <!-- mouse -->
     <div class="mouse__cursor"></div>
     <!-- //mouse -->
@@ -47,9 +49,9 @@
           <div class="text">
             <h3>index</h3>
             <ul>
-              <li><a href="#">about</a></li>
-              <li><a href="#">work</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#section2">about</a></li>
+              <li><a href="#section5">work</a></li>
+              <li><a href="#section7">contact</a></li>
             </ul>
           </div>
         </div>
@@ -456,12 +458,12 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
                   type="email"
                   name="email"
                   placeholder="GIVE ME YOUR E-MAIL ADDRESS."
+                  required
                 />
               </label>
               <label>
                 MESSAGE :
-                <textarea name="message" placeholder="WHAT DO WANT TO KNOW?">
-                </textarea>
+                <textarea name="message"> </textarea>
               </label>
               <!-- your other form fields go here -->
               <button type="submit">SUBMIT</button>
@@ -556,8 +558,8 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
 
           setTimeout(() => {
             loader.style.display = "none";
-          }, 300);
-        }, 3000);
+          }, 500);
+        }, 2000);
       });
     </script>
   </body>
