@@ -5,14 +5,14 @@
   top: 0;
   width: 20px;
   height: 20px;
-  background-color: #cb392f88;
+  background-color: #1f1f1f;
   border-radius: 50%;
   z-index: 1000;
   user-select: none;
   pointer-events: none;
 }
 .mouse__cursor:hover {
-  background-color: #7cb9eb;
+  background-color: #f3d687;
 }
 /* //mouse */
 
@@ -74,12 +74,16 @@
 .logo {
   position: absolute;
   bottom: 0;
+  z-index: 1000;
   text-align: center;
-  color: #f387c8;
+  color: #f3d687;
   font-size: 25px;
   margin-left: -50px;
   opacity: 0;
   animation: logo 5s ease-in-out infinite;
+  font-family: "neue haas grotesk display pro";
+  font-size: 28px;
+  font-weight: 900;
 }
 
 @keyframes logo {
@@ -127,7 +131,7 @@
 .circle {
   width: 55px;
   height: 55px;
-  border: 5px solid #f387c8;
+  border: 5px solid #f3d687;
   background-color: #ffffff;
   border-radius: 50%;
   position: absolute;
@@ -161,7 +165,7 @@
 .square {
   width: 55px;
   height: 55px;
-  border: 5px solid #f387c8;
+  border: 5px solid #f3d687;
   background-color: #ffffff;
   position: absolute;
   bottom: 0;
@@ -208,7 +212,7 @@
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-bottom: 50px solid #f387c8;
+  border-bottom: 50px solid #f3d687;
   position: absolute;
   bottom: 0;
   animation: triangle 5s ease-in-out infinite;

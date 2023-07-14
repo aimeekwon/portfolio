@@ -1,22 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@font-face {
-  font-family: "IropkeBatang";
-  font-weight: normal;
-  font-style: normal;
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot");
-  src: url("https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff2")
-      format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff")
-      format("woff"),
-    url("https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.ttf")
-      format("truetype");
-  font-display: swap;
-}
-
-body {
-  overflow-x: hidden;
+html {
+  overflow-x: hidden !important;
 }
 /* border-box 초기화 */
 *,
@@ -63,6 +46,7 @@ figure,
 figcaption {
   margin: 0;
   padding: 0;
+  cursor: none;
 }
 
 /* 폰트 초기화 */
@@ -96,7 +80,6 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
-  cursor: pointer;
 }
 
 /* 스타일 초기화 */

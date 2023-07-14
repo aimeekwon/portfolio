@@ -307,7 +307,8 @@
   align-content: center;
 }
 #section3 .site-wrap .site .right a span {
-  border: 1px solid #1f1f1f;
+  background-color: #1f1f1f;
+  color: #fff;
   font-size: 20px;
   padding: 5px 40px;
   display: inline-block;
@@ -316,12 +317,13 @@
   transition: all ease 1.5s;
 }
 #section3 .site-wrap .site .right a:hover span {
-  /* background-color: #ebeae4; */
-  transition: all ease 1.5s;
-  font-size: 20px;
+  background-color: #919598;
+  border: none;
+  transition: all ease 1s;
+  /* font-size: 20px; */
   /* border: none; */
-  transform: scale(0.98);
-  font-weight: 600;
+  /* transform: scale(0.98);
+  font-weight: 600; */
 }
 #section3 .site-wrap .site .right p {
   font-family: "NanumSquare4";
@@ -369,6 +371,9 @@
 }
 #section4 .title-wrap .sec4-title6 {
   background-color: #d4d4d4;
+}
+#section4 .title-wrap .sec4-title7 {
+  background-color: #f3d687;
 }
 #section4 .script-wrap {
   margin: 20px;

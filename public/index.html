@@ -18,7 +18,7 @@
     
     
     <script src="assets/js/script.js"></script>
-    <link rel="stylesheet" href="/assets/index-d9dc9417.css">
+    <link rel="stylesheet" href="/assets/index-e2c2c04f.css">
   </head>
   <body>
     <!-- loader -->
@@ -26,7 +26,7 @@
       <div class="circle"></div>
       <div class="square"></div>
       <div class="triangle"></div>
-      <div class="logo">PORTFOLIO<br />comming</div>
+      <!-- <div class="logo">I'm<br />coming</div> -->
       <div class="shadow"></div>
     </div>
     <!-- //loader -->
@@ -420,7 +420,7 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
         </div>
         <div class="sec7-desc">
           <div class="left">
-            <img src="/assets/profile02-74bcc8c0.jpg" alt="" />
+            <img src="/assets/profile4-598fd3d7.jpg" alt="" />
             <p></p>
           </div>
           <div class="right">
@@ -455,7 +455,7 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
                 <input
                   type="email"
                   name="email"
-                  placeholder="GIVE ME YOUR E-MAIL ADRESS."
+                  placeholder="GIVE ME YOUR E-MAIL ADDRESS."
                 />
               </label>
               <label>
@@ -472,7 +472,7 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
       <!-- //section7 -->
     </main>
     <!-- //contents -->
-
+    <script></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
@@ -523,6 +523,42 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
         tl.to("#section1 .left .text", { autoAlpha: 1 });
       }, 2000);
       //
+      // mouse effect
+      document.querySelector("body").addEventListener("mousemove", (e) => {
+        gsap.to(".mouse__cursor", {
+          duration: 0.2,
+          left: e.pageX,
+          top: e.pageY,
+        });
+        //마우스 좌표값
+        let mousePageX = e.pageX;
+        let mousePageY = e.pageY;
+        //전체 화면 가로 값
+        // window.innerWidth   //1920 브라우저 크기
+        // window.outerWidth   //1920 브라우저 크기 (스크롤 바 포함)
+        // window.screen.width //1920 화면 크기
+        //마우스 좌표값 기준점 가운데로 설정
+        let centerpageX = window.innerWidth / 2 - mousePageX;
+        let centerpageY = window.innerHeight / 2 - mousePageY;
+      });
+      //loader
+      const loader = document.querySelector(".container");
+      const html = document.querySelector("html");
+
+      html.style.overflow = "hidden"; //로딩 중 스크롤 방지
+
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          //로딩속도 구현
+
+          loader.style.opacity = "0";
+          html.style.overflow = "auto"; //스크롤 방지 해제
+
+          setTimeout(() => {
+            loader.style.display = "none";
+          }, 300);
+        }, 3000);
+      });
     </script>
   </body>
 </html>
