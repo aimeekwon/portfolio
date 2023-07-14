@@ -720,6 +720,8 @@
 #section7 .sec7-desc .right form label input {
   width: 30vw;
   border: solid 1px #ccc;
+  padding-left: 3px;
+  color: #eee;
 }
 #section7 .sec7-desc .right form label textarea {
   letter-spacing: pre;
