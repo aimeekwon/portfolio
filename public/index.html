@@ -18,7 +18,7 @@
     
     
     <script src="assets/js/script.js"></script>
-    <link rel="stylesheet" href="/assets/index-6c806124.css">
+    <link rel="stylesheet" href="/assets/index-ab8418b0.css">
   </head>
   <body>
     <!-- loader -->
@@ -57,7 +57,7 @@
     <!-- //header -->
 
     <main id="contents">
-      <section id="section1">
+      <section id="section1" class="section__pin">
         <div class="left">
           <div class="text">
             <h3>index</h3>
@@ -78,7 +78,7 @@
       </section>
       <!-- //section1 -->
 
-      <section id="section2">
+      <section id="section2" class="section__pin">
         <div class="sec2-title">
           <span class="left">1.</span>
           <div class="right">
@@ -123,7 +123,7 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
       </section>
       <!-- //section2 -->
 
-      <section id="section3">
+      <section id="section3" class="section__pin">
         <div class="title-wrap">
           <div class="sec3-title1">2.</div>
           <div class="sec3-title2">webstandard site</div>
@@ -225,7 +225,7 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
       </section>
       <!-- //section3 -->
 
-      <section id="section4">
+      <section id="section4" class="section__pin">
         <div class="title-wrap">
           <div class="sec4-title1">3.</div>
           <div class="sec4-title2">Parallax Effect</div>
@@ -340,7 +340,7 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
       </section>
       <!-- //section4 -->
 
-      <section id="section5">
+      <section id="section5" class="section__pin">
         <div class="sec5-title">
           <span class="left">4.</span>
           <div class="right">
@@ -422,11 +422,11 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
         </div>
       </section>
       <!-- //section5 -->
-      <section id="section6">
+      <section id="section6" class="section__pin">
         <img src="" alt="" />
       </section>
       <!--  section6-->
-      <section id="section7">
+      <section id="section7" class="section__pin">
         <div class="sec7-title">
           <div class="left">5.</div>
           <div class="right">
@@ -573,6 +573,21 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
             loader.style.display = "none";
           }, 500);
         }, 2000);
+      });
+
+      // section__pin
+      gsap.utils.toArray(".section__pin").forEach((item, i) => {
+        ScrollTrigger.create({
+          // duration: 20,
+          trigger: item,
+          start: "top top",
+          end: "bottom bottom",
+          pin: true,
+          pinSpacing: true,
+          scrub: true,
+          markers: true,
+          snap: 1 / 5,
+        });
       });
     </script>
   </body>

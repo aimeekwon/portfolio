@@ -1,6 +1,11 @@
 /* responsable */
 /* 1280 */
 /* 780 */
+/* section__pin */
+.section__pin {
+  width: 100%;
+  height: inherit;
+}
 
 /* header */
 #header {
@@ -231,7 +236,7 @@
 
 #section3 {
   width: 100%;
-  /* height: 400vh; */
+  height: 400vh;
 }
 #section3 .title-wrap {
   padding: 20px;
