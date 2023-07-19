@@ -80,19 +80,19 @@
         <div class="sec2-title">
           <span class="left">1.</span>
           <div class="right">
-            <h2>about me</h2>
+            <h2>about</h2>
           </div>
           <p>
-            <!-- 안녕하세요! 8년 차 퍼블리셔 권현정 입니다.<br />
+            안녕하세요! 8년 차 퍼블리셔 권현정 입니다.<br />
             최근 프론트엔드 개발에 대한 열정이 높아져, 프론트엔드 개발자로의
-            전환을 결심했습니다. -->
+            전환을 결심했습니다.
           </p>
         </div>
         <div class="sec2-desc">
           <div class="left"></div>
           <div class="right">
             <pre>
-<!-- 퍼블리셔로서 일하는 동안 
+퍼블리셔로서 일하는 동안 
 효율적인 코드 작성과 웹 사이트의 모바일 호환성을 높이기 위한 
 CSS3와 반응형 웹을 작업 했습니다.
 이 업무를 통해 웹 사이트의 성능을 향상시키고 
@@ -114,7 +114,7 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
 보유하고 있습니다. 프론트엔드 개발자로서의 역량을 확장하고 싶어서 
 이 자리에 지원서를 제출하게 되었습니다. 
 저는 전문적으로 성장하고, 협업하며, 혁신적인 솔루션을 창출하며 기여하고 싶습니다. 
-기회를 주신다면, 최선을 다해 결과를 돌려드리도록 하겠습니다. -->
+기회를 주신다면, 최선을 다해 결과를 돌려드리도록 하겠습니다.
             </pre>
           </div>
         </div>
@@ -576,11 +576,63 @@ SCSS, JavaScript 및 React, next.js 등의 기술을 습득했습니다.
           start: "top top",
           end: "bottom bottom",
           pin: true,
-          pinSpacing: true,
+          pinSpacing: false,
           scrub: true,
           markers: false,
           snap: 1 / 5,
         });
+      });
+      // section2
+
+      const tl0 = gsap.timeline();
+      tl0.to("#section2 .sec2-desc", {
+        y: -800,
+        duration: 10,
+      });
+      ScrollTrigger.create({
+        animation: tl0,
+        duration: 10,
+        trigger: "#section2",
+        start: "top top",
+        end: "+=900",
+        scrub: true,
+        pinSpacing: false,
+        snap: 1 / 2,
+      });
+      // section3
+      const tl1 = gsap.timeline();
+      tl1.to("#section3 .site-wrap", {
+        y: -2750,
+        duration: 70,
+      });
+      ScrollTrigger.create({
+        animation: tl1,
+        duration: 50,
+        trigger: "#section3",
+
+        start: "top top",
+        end: "+=2000",
+        scrub: true,
+        pinSpacing: false,
+        // snap: 1 / 2,
+        markers: true,
+      });
+      // section4
+      const tl2 = gsap.timeline();
+      tl2.to("#section4 .script-wrap", {
+        y: -2750,
+        duration: 70,
+      });
+      ScrollTrigger.create({
+        animation: tl2,
+        duration: 50,
+        trigger: "#section4",
+        start: "top top",
+        end: "+=2000",
+        scrub: true,
+        pinSpacing: false,
+        snap: 1 / 2,
+        markers: true,
       });
     </script>
   </body>
